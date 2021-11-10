@@ -1,0 +1,33 @@
+.display{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+}
+
+.btn__svg{
+    border-radius: 5px;
+    transition: all 0.2s;
+    background-color: rgb(212, 212, 212);
+    width: 5rem;
+    height: 5rem;
+}
+
+.btn__svg:hover{
+
+    background-color: rgb(159, 201, 162);
+}
+.btn{
+    padding: 0;
+    border: none;
+    background-color: transparent;
+}
+.btn:active{
+    border-radius: 10px;
+}
+.btn:active .btn__svg{
+    background-color: yellowgreen;
+    width: 6rem;
+    height: 6rem;
+    
+}
