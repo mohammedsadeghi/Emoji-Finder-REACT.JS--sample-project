@@ -37,3 +37,21 @@
   font-weight: 300;
   text-transform: uppercase;
 }
+
+.display__system{
+  display: flex;
+  flex-wrap: wrap;
+  width:100%
+}
+
+.emoji__style{
+  
+  display: flex;
+  font-size: 6rem;
+  flex: 0 0 25%;
+  justify-content: center;
+}
+
+.emoji__style:hover{
+  background-color: grey;
+}

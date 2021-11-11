@@ -1,0 +1,59 @@
+.emoji__container{
+    display: flex;
+    flex: 0 0 22%;
+    justify-content: space-evenly;
+    font-size: 4rem;
+    transition: all 0.5s;
+    margin-bottom: 0.8rem;
+    padding: 1rem;
+    border: 3px dashed transparent;
+    border-radius: 1rem;
+}
+/* .emoji__container{
+    display: inline-block;
+    font-size: 4rem;
+    padding: 1rem;
+    border: 3px dashed transparent;
+    border-radius: 1rem;
+    transition: all 0.5s;
+    margin-bottom: 0.8rem;
+    width: 100%;
+
+} */
+
+
+.emoji__span{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+/* .emoji__span{
+    display: inline-block;
+} */
+/* .emoji__title{
+    display: none;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+} */
+.emoji__title{
+    display: none;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+    
+
+
+}
+
+.emoji__container:hover .emoji__title{
+    display: inline-block;
+    align-items: center;
+    margin-left: auto;
+}
+.emoji__container:hover{
+    align-items: center;
+    box-sizing: inherit;
+    background-color: grey;
+    border: 3px dashed orangered;
+}
