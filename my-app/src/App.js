@@ -10,20 +10,19 @@ const App = () => {
     return { input: "" };
   });
 
-  var n = null;
-  var b = [];
-
   const m = () => {
+    var EmojiHolder;
+    var FilteredEmoji = [];
     var c = [];
-    n = [...EmojiJason];
+    EmojiHolder = [...EmojiJason];
 
-    b = n.map((emoji, index) => {
+    FilteredEmoji = EmojiHolder.map((emoji, index) => {
       if (
         emoji.keywords.toLowerCase().includes(state.input.toLocaleLowerCase())
       ) {
         return true;
       }
-      if (n[index].keywords.includes(state.input)) {
+      if (EmojiHolder[index].keywords.includes(state.input)) {
         return true;
       }
 
@@ -31,11 +30,11 @@ const App = () => {
     });
 
     let count = 0;
-    for (var i in b) {
-      if (b[i] !== false) {
+    for (var i in FilteredEmoji) {
+      if (FilteredEmoji[i] !== false) {
         c[count] = (
-          <Emoji key={count} title={n[i].title}>
-            {n[i].symbol}
+          <Emoji key={count} title={EmojiHolder[i].title}>
+            {EmojiHolder[i].symbol}
           </Emoji>
         );
 
